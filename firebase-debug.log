@@ -1,0 +1,37 @@
+[debug] [2023-05-11T18:56:20.731Z] ----------------------------------------------------------------------
+[debug] [2023-05-11T18:56:20.734Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\saxen\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2023-05-11T18:56:20.734Z] CLI Version:   11.30.0
+[debug] [2023-05-11T18:56:20.734Z] Platform:      win32
+[debug] [2023-05-11T18:56:20.735Z] Node Version:  v19.4.0
+[debug] [2023-05-11T18:56:20.735Z] Time:          Fri May 12 2023 00:26:20 GMT+0530 (India Standard Time)
+[debug] [2023-05-11T18:56:20.735Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-05-11T18:56:20.812Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-05-11T18:56:20.812Z] > authorizing via signed-in user (ep22btech11021@iith.ac.in)
+[debug] [2023-05-11T18:56:20.812Z] [iam] checking project learn-coding-prakhar for permissions ["firebase.projects.get","firebasedatabase.instances.update","firebasehosting.sites.update"]
+[debug] [2023-05-11T18:56:20.815Z] > refreshing access token with scopes: []
+[debug] [2023-05-11T18:56:20.817Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2023-05-11T18:56:20.817Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-05-11T18:56:21.184Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2023-05-11T18:56:21.184Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-05-11T18:56:21.216Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/learn-coding-prakhar:testIamPermissions [none]
+[debug] [2023-05-11T18:56:21.217Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/learn-coding-prakhar:testIamPermissions x-goog-quota-user=projects/learn-coding-prakhar
+[debug] [2023-05-11T18:56:21.217Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/learn-coding-prakhar:testIamPermissions {"permissions":["firebase.projects.get","firebasedatabase.instances.update","firebasehosting.sites.update"]}
+[debug] [2023-05-11T18:56:22.918Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/learn-coding-prakhar:testIamPermissions 200
+[debug] [2023-05-11T18:56:22.919Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/learn-coding-prakhar:testIamPermissions {"permissions":["firebase.projects.get","firebasedatabase.instances.update","firebasehosting.sites.update"]}
+[debug] [2023-05-11T18:56:22.920Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/learn-coding-prakhar [none]
+[debug] [2023-05-11T18:56:23.633Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/learn-coding-prakhar 200
+[debug] [2023-05-11T18:56:23.633Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/learn-coding-prakhar {"projectId":"learn-coding-prakhar","projectNumber":"395317084623","displayName":"Learn Coding","name":"projects/learn-coding-prakhar","resources":{"hostingSite":"learn-coding-prakhar","realtimeDatabaseInstance":"learn-coding-prakhar-default-rtdb"},"state":"ACTIVE","etag":"1_9eb9a9bc-3d5a-486c-8814-2c1eb4a3625f"}
+[debug] [2023-05-11T18:56:23.634Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/learn-coding-prakhar [none]
+[debug] [2023-05-11T18:56:24.007Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/learn-coding-prakhar 200
+[debug] [2023-05-11T18:56:24.008Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/learn-coding-prakhar {"projectId":"learn-coding-prakhar","projectNumber":"395317084623","displayName":"Learn Coding","name":"projects/learn-coding-prakhar","resources":{"hostingSite":"learn-coding-prakhar","realtimeDatabaseInstance":"learn-coding-prakhar-default-rtdb"},"state":"ACTIVE","etag":"1_9eb9a9bc-3d5a-486c-8814-2c1eb4a3625f"}
+[info] 
+[info] === Deploying to 'learn-coding-prakhar'...
+[info] 
+[info] i  deploying database, hosting 
+[info] i  database: checking rules syntax... 
+[debug] [2023-05-11T18:56:24.015Z] >>> [apiv2][query] GET https://firebasedatabase.googleapis.com/v1beta/projects/learn-coding-prakhar/locations/-/instances/learn-coding-prakhar-default-rtdb [none]
+[debug] [2023-05-11T18:56:25.020Z] <<< [apiv2][status] GET https://firebasedatabase.googleapis.com/v1beta/projects/learn-coding-prakhar/locations/-/instances/learn-coding-prakhar-default-rtdb 200
+[debug] [2023-05-11T18:56:25.020Z] <<< [apiv2][body] GET https://firebasedatabase.googleapis.com/v1beta/projects/learn-coding-prakhar/locations/-/instances/learn-coding-prakhar-default-rtdb {"name":"projects/395317084623/locations/us-central1/instances/learn-coding-prakhar-default-rtdb","project":"projects/395317084623","databaseUrl":"https://learn-coding-prakhar-default-rtdb.firebaseio.com","type":"DEFAULT_DATABASE","state":"ACTIVE"}
+[debug] [2023-05-11T18:56:25.022Z] >>> [apiv2][query] PUT https://learn-coding-prakhar-default-rtdb.firebaseio.com/.settings/rules.json dryRun=true
+[debug] [2023-05-11T18:56:25.022Z] >>> [apiv2][body] PUT https://learn-coding-prakhar-default-rtdb.firebaseio.com/.settings/rules.json "{\n  \"rules\": {\n    \".read\": true,\n    \".write\": true,\n  }\n}"
