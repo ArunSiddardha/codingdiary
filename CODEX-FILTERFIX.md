@@ -1,0 +1,1 @@
+codex simplified-rules test
